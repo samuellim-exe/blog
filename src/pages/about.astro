@@ -1,0 +1,153 @@
+---
+const pageTitle = "About";
+
+const identity = {
+  name: "Samuel Lim",
+  email: ["samlimyisheng@gmail.com"],
+  socialMedia: {
+    Instagram: "@samuellim.exe",
+    GitHub: "@samuellim-exe",
+    Twitter: "https://twitter.com/samuellim09",
+    Website: "https://samuellim.me",
+  },
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Python",
+    "Django",
+    "Java",
+    "C++",
+    "C#",
+    "Unity",
+    "Blender",
+    "Photoshop",
+    "Illustrator",
+    "Figma",
+    "Adobe XD",
+    "UI/UX Design",
+    "Web Development",
+    "Game Development",
+    "Mobile Development",
+    "Desktop Development",
+    "Full Stack Development",
+    "Frontend Development",
+    "Backend Development",
+    "Database Management",
+    "Version Control",
+    "Agile Development",
+    "Scrum",
+    "Kanban",
+    "Jira",
+    "Trello",
+    "Slack",
+    "Discord",
+    "Zoom",
+    "Google Meet",
+    "Microsoft Teams",
+    "Visual Studio Code",
+    "IntelliJ IDEA",
+    "PyCharm",
+    "WebStorm",
+    "CLion",
+    "Unity",
+    "Blender",
+    "Photoshop",
+    "Illustrator",
+    "Figma",
+    "Adobe XD",
+    "UI/UX Design",
+    "Web Development",
+    "Game Development",
+    "Mobile Development",
+    "Desktop Development",
+    "Full Stack Development",
+    "Frontend Development",
+    "Backend Development",
+    "Database Management",
+    "Version Control",
+    "Agile Development",
+    "Scrum",
+    "Kanban",
+    "Jira",
+    "Trello",
+    "Slack",
+    "Discord",
+    "Zoom",
+    "Google Meet",
+    "Microsoft Teams",
+    "Visual Studio Code",
+    "IntelliJ IDEA",
+    "PyCharm",
+    "WebStorm",
+    "CLion",
+    "Unity",
+    "Blender",
+    "Photoshop",
+    "Illustrator",
+    "Figma",
+    "Adobe XD",
+    "UI/UX Design",
+    "Web Development",
+    "Game Development",
+    "Mobile Development",
+    "Desktop Development",
+    "Full Stack Development",
+    "Frontend Development",
+    "Backend Development",
+    "Database Management",
+    "Version Control",
+    "Agile Development",
+    "Scrum",
+    "Kanban",
+    "Jira",
+    "Trello",
+    "Slack",
+    "Discord",
+  ],
+};
+
+const skillColor = "black"
+const skillFontCase = "uppercase"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <style define:vars={{skillColor, skillFontCase}}>
+    h1{
+        color: black;
+        font-size: 4rem;
+    }    
+    .skill{
+        color: var(--skillColor);
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: var(--skillFontCase);
+    }
+    </style>  
+</head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/blog">Blog</a>
+
+    <h1>{pageTitle}</h1>
+
+    <p>My name is {identity.name}</p>
+
+    <p>My skills are:</p>
+    <ul>
+      {identity.skills.map((skill) => (
+        <li class="skill">{skill}</li>
+      ))}
+  </body>
+</html>
